@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Sakshi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="page1">
+<div class="heart" style="left: 10%; animation-delay: 1s;"></div>
+<div class="heart" style="left: 20%; animation-delay: 2s;"></div>
+<div class="heart" style="left: 30%; animation-delay: 3s;"></div>
+<div class="heart" style="left: 40%; animation-delay: 4s;"></div>
+<div class="heart" style="left: 50%; animation-delay: 5s;"></div>
+<div class="heart" style="left: 60%; animation-delay: 6s;"></div>
+<div class="heart" style="left: 70%; animation-delay: 7s;"></div>
+<div class="heart" style="left: 80%; animation-delay: 8s;"></div>
+<div class="heart" style="left: 90%; animation-delay: 9s;"></div>
+
+  <audio autoplay loop>
+    <source src="media/background_music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <h1>Happy Birthday Sakshi😘🫠!</h1>
+    <a href="page2.html" class="button">Yha dabao 🤭🤭</a>
+    <footer>Designed and Developed with ❤️ by <span class="keshu"><span style="color: grey;">Keshu</span></span></footer>
+  </div>
+
+  <div class="hearts"></div>
+
+
+<div style="text-align: center; font-size: 2em; margin-top: 15px; animation: pulse 1s infinite;">
+    💖 💘 💞 💝 💗
+</div>
+<style>
+
+/* Floating hearts animation */
+.heart {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  transform: rotate(45deg);
+  animation: float 8s infinite ease-in;
+}
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  border-radius: 50%;
+}
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+@keyframes float {
+  0% {
+    bottom: -20px;
+    opacity: 0;
+    transform: translateX(0) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 100%;
+    transform: translateX(100px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* Moving teddy bear */
+.teddy {
+  position: fixed;
+  bottom: 10px;
+  left: -100px;
+  width: 80px;
+  z-index: 5;
+  animation: moveTeddy 20s linear infinite;
+}
+@keyframes moveTeddy {
+  0% { left: -100px; }
+  50% { left: 100vw; transform: scaleX(1); }
+  51% { transform: scaleX(-1); }
+  100% { left: -100px; transform: scaleX(-1); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+</style>
+<div style="text-align: center; margin-top: 30px; font-size: 1.5em; color: #8B0000; font-weight: bold;">
+    💖 "You're the reason my heart beats a little faster every day." 💖<br>
+    💌 "In your smile, I find something more beautiful than stars." 💌
+</div>
+</body>
+</html>
